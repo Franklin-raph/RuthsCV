@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <footer>
+      <div class="foot-one">
+        <img src="/image-retro-pcs.jpg" alt="" />
+        <div>
+          <h1>01</h1>
+          <h3>Reviving Retro PCs</h3>
+          <p>What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </div>
+      <div class="foot-two">
+        <img src="/image-top-laptops.jpg" alt="" />
+        <div>
+          <h1>02</h1>
+          <h3>Top 10 Laptops of 2022</h3>
+          <p>Our best picks for various needs and budgets.</p>
+        </div>
+      </div>
+      <div class="foot-three">
+        <img src="/image-gaming-growth.jpg" alt="" />
+        <div class="c">
+          <h1>03</h1>
+          <h3>The Growth of Gaming</h3>
+          <p>How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </div>
+    </footer>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Inter Tight", sans-serif;
+      }
+
+      footer {
+        padding: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+      }
+
+      footer img {
+        width: 30%;
+      }
+
+      .foot-one,
+      .foot-two,
+      .foot-three {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 50%;
+      }
+
+      footer h1 {
+        color: lightgray;
+        font-size: 30px;
+        font-weight: 700;
+      }
+
+      footer h3 {
+        font-weight: 800;
+        margin: 15px 0;
+      }
+
+      footer p {
+        line-height: 1.6;
+        color: grey;
+        font-size: 17px;
+      }
+
+      @media screen and (max-width: 375px) {
+        footer {
+          flex-direction: column;
+          padding: 10px;
+        }
+
+        .foot-one,
+        .foot-two,
+        .foot-three {
+          width: 100%;
+        }
+        footer img {
+          width: 40%;
+        }
+        footer h1{
+            font-size: 22px;
+        }
+      }
+    </style>
+  </body>
+</html>

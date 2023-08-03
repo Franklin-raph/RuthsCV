@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+#myCv{
+    /* height: 297mm; */
+    /* width: 210mm; */
+    /* height: 11.7in; */
+    width: 8.3in;
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    border: 1px solid black;
+    margin: 3rem auto;
+    /* overflow: hidden; */
+}
+
+.contactDetails a{
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    gap: 5px;
+}
+
+.left{
+    background-color: #323B4C;
+    -webkit-print-color-adjust: exact;
+    color: #fff;
+    text-align: end;
+}
+
+.img-div{
+    width: 60%;
+    margin: auto;
+}
+
+.left img{
+    border-radius: 50%;
+    margin: 4rem auto 0;
+    width: 100%;
+    filter: grayscale(1);
+}
+
+.contact{
+    margin-top: 3rem;
+}
+
+.contact h3{
+    display: inline-block;
+    padding-right: 6rem;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 3px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.contactDetails{
+    padding-right: 3.5rem;
+    margin-top: 1.2rem;
+}
+
+.contactDetails div{
+    /* background-color: red; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+    margin-top: 1.5rem;
+    position: relative;
+    left: 3rem;
+    font-size: 12px;
+    /* padding-left: 8rem; */
+}
+
+.contactDetails i{
+    background-color: #fff;
+    color: #323B4C;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
+
+.education{
+    margin-top: 2.2rem;
+}
+
+.education h3{
+    display: inline-block;
+    padding-right: 5rem;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 3px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.skills{
+    margin-top: 2.2rem;
+}
+
+.skills h3{
+    display: inline-block;
+    padding-right: 5rem;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 3px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.skillSets{
+    text-align: left;
+    margin-left: 4rem;
+    font-size: 14px;
+    /* list-style: n; */
+}
+
+.skillSets li{
+    margin: 5px 0;
+}
+
+.educationInfo{
+    text-align: left;
+}
+
+.right{
+    padding: 3rem 1rem 2rem 2rem;
+    color: #323B4C;
+}
+
+.right .name{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.name span{
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+.desc{
+    margin: 20px 0 4.1rem 0;
+    font-size: 14px;
+}
+
+.workExperience .title{
+    border-bottom: 1px solid #323B4C;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.experiences{
+    margin-top: 25px;
+}
+
+.experiences h4 span {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.experiences .date{
+    font-size: 12px !important;
+    background-color:#323B4C;
+    -webkit-print-color-adjust: exact;
+    color: #fff;
+    display:inline-block;
+    padding:2px 5px;
+    font-size:15px;
+    margin-bottom: 5px;
+}
+
+.timeline{
+    /* width:800px; */
+    /* background-color:#072736; */
+    /* color:#fff; */
+    /* padding:30px 20px; */
+    /* box-shadow:0px 0px 10px rgba(0,0,0,.5); */
+  }
+
+  .timeline .timelineUl{
+    list-style-type:none;
+    padding:10px 5px;
+    border-left:2px solid #323B4C;
+  }
+
+  .timeline .timelineUl .timelineLi{
+    padding:20px 20px;
+    position:relative;
+    transition:.5s;
+  }
+
+  .timeline .timelineUl .timelineLi span{
+    display:inline-block;
+    border-radius:25px;
+    padding:2px 5px;
+    font-size:15px;
+    text-align:center;
+  }
+
+  .timeline .timelineUl .timelineLi .content p{
+    padding:5px 0px 15px 0px;
+    font-size:15px;
+  }
+
+  .timeline .timelineUl .timelineLi::before{
+    position:absolute;
+    content:'';
+    width:10px;
+    height:10px;
+    background-color:#fff;
+    border: 2px solid #323B4C;
+    border-radius:50%;
+    left:-13px;
+    top:28px;
+    transition:.5s;
+  }
+
+  .innerUl{
+    padding-left: 20px;
+  }
+
+  .innerUl li{
+    font-size: 14px;
+    padding: 3px 0;
+  }
+
+  /* .timeline ul li:hover{
+    background-color:#071f2a;
+  } */
+
+  /* .timeline ul li:hover::before{
+    background-color:#0F0;
+    box-shadow:0px 0px 10px 2px #0F0;
+  } */
+
+  @media (max-width:300px){
+    .timeline{
+      width:100%;
+      padding:30px 5px 30px 10px;
+    }
+
+    .timeline .timelineUl li .content h3{
+      color:#34ace0;
+      font-size:15px;
+    }
+  
+  }
+
+@page {
+    size: auto;
+    margin: 0mm;
+}
